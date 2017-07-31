@@ -15,7 +15,7 @@ chaiAsPromised.transferPromiseness = wd.transferPromiseness;
  * https://s3.amazonaws.com/sauce-misc/SampleCustomerApp.app.zip
  */
 
-let app = wd.promiseChainRemote(creds.HOST, creds.PORT, creds.USER, creds.KEY);
+let app = wd.promiseChainRemote('localhost', 4723);
 
 describe('on a real iOS device...', function() {
     this.timeout(240000);
